@@ -1,126 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dar Mann Fan Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-color: #c0c0c0;
+            font-family: "Times New Roman", serif;
+            color: black;
             margin: 0;
-            background: #f5f5f5;
-            color: #333;
+            padding: 0;
         }
 
-        header {
-            background: #000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        nav {
-            background: #222;
+        .container {
+            width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border: 3px solid black;
             padding: 10px;
-            text-align: center;
+            box-shadow: 0px 0px 0px 5px #808080;
         }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
+        h1, h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .bar {
+            background: yellow;
+            padding: 5px;
+            border: 2px solid black;
+            margin-bottom: 15px;
         }
 
         .section {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            border: 2px dotted black;
+            padding: 10px;
+            margin-top: 15px;
         }
 
-        .video-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        a {
+            color: blue;
+            text-decoration: underline;
         }
 
-        .video-card h3 {
-            margin-top: 0;
-        }
-
-        footer {
-            background: #000;
-            color: white;
+        .center {
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+        }
+
+        .divider {
+            border-top: 4px dashed black;
+            margin: 20px 0;
         }
     </style>
 </head>
+
 <body>
 
-<header>
+<div class="container">
+
+    <div class="bar">
+        <marquee>Welcome to the Dar Mann Fan Page</marquee>
+    </div>
+
     <h1>Dar Mann Fan Page</h1>
-    <p>"We're not just telling stories... we're changing lives."</p>
-</header>
+    <p class="center"><i>We're not just telling stories... we're changing lives.</i></p>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#videos">Popular Videos</a>
-    <a href="#quotes">Quotes</a>
-</nav>
+    <div class="divider"></div>
 
-<section id="about" class="section">
-    <h2>About Dar Mann</h2>
-    <p>
-        Dar Mann is a filmmaker and storyteller known for making inspirational 
-        and life-lesson videos. His stories are meant to motivate, inspire, and 
-        teach meaningful lessons about kindness, honesty, and personal growth.
-    </p>
-</section>
-
-<section id="videos" class="section">
-    <h2>Popular Dar Mann Videos</h2>
-
-    <div class="video-card">
-        <h3>Mean Girl Gets EXPOSED</h3>
-        <p>A classic story about treating others with kindness and how being rude always comes back around.</p>
-        <a href="https://www.youtube.com/results?search_query=dar+mann+mean+girl+gets+exposed" target="_blank">Watch on YouTube</a>
+    <div class="section">
+        <h2>About</h2>
+        <p>
+            This site celebrates the inspirational stories created by Dar Mann.
+            Classic life-lesson videos, motivational ideas, and positive messages.
+        </p>
     </div>
 
-    <div class="video-card">
-        <h3>Kid Cheats in School</h3>
-        <p>Teaches why honesty matters and how cheating hurts you in the long run.</p>
-        <a href="https://www.youtube.com/results?search_query=dar+mann+kid+cheats" target="_blank">Watch on YouTube</a>
+    <div class="section">
+        <h2>Popular Videos</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/results?search_query=dar+mann+mean+girl">Mean Girl Gets Exposed</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=dar+mann+cheats">Kid Cheats in School</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=dar+mann+bully">Boy Gets Bullied</a></li>
+        </ul>
     </div>
 
-    <div class="video-card">
-        <h3>Boy Gets Bullied at School</h3>
-        <p>A reminder that we never know what others are going through and why kindness matters.</p>
-        <a href="https://www.youtube.com/results?search_query=dar+mann+bully" target="_blank">Watch on YouTube</a>
+    <div class="section">
+        <h2>Quotes</h2>
+        <ul>
+            <li>"What happens in the dark always comes to light."</li>
+            <li>"Being kind is always the right choice."</li>
+            <li>"The choices you make today shape your future."</li>
+        </ul>
     </div>
-</section>
 
-<section id="quotes" class="section">
-    <h2>Inspirational Quotes</h2>
-    <ul>
-        <li>"What happens in the dark always comes to light."</li>
-        <li>"Being kind is always the right choice."</li>
-        <li>"You never know what someone is going through. Be kind."</li>
-        <li>"The choices you make today shape your future."</li>
-    </ul>
-</section>
-
-<footer>
-    <p>Fan Page made by Larry Inc • Not affiliated with Dar Mann Studios</p>
-</footer>
+</div>
 
 </body>
 </html>
+
