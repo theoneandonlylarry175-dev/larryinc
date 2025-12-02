@@ -10,13 +10,14 @@
             padding: 0;
             font-family: 'Courier New', Courier, monospace;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: #00ffcc;
             text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         h1 {
             font-size: 4rem;
@@ -24,10 +25,10 @@
             animation: flicker 1.5s infinite;
         }
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         .spinner {
-            margin-top: 30px;
+            margin-top: 20px;
             width: 50px;
             height: 50px;
             border: 5px solid rgba(0, 255, 204, 0.3);
@@ -44,22 +45,90 @@
             20%, 22%, 24%, 55% { opacity: 0.4; }
         }
         .footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
+            margin-top: 30px;
             font-size: 0.9rem;
             color: rgba(0, 255, 204, 0.5);
+        }
+        .comment-section {
+            margin-top: 40px;
+            width: 90%;
+            max-width: 500px;
+            text-align: left;
+        }
+        .comment-section input, .comment-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #00ffcc;
+            background: #0f2027;
+            color: #00ffcc;
+            font-family: 'Courier New', monospace;
+        }
+        .comment-section button {
+            padding: 8px 16px;
+            margin-top: 5px;
+            background: #00ffcc;
+            color: #0f2027;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .comment {
+            border-bottom: 1px solid rgba(0,255,204,0.3);
+            padding: 5px 0;
+        }
+        .comment strong {
+            color: #ffcc00;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Larry Inc</h1>
-        <p>Our website is under construction. Stay tuned!</p>
-        <div class="spinner"></div>
+    <h1>Larry Inc</h1>
+    <p>Our website is under construction. Stay tuned!</p>
+    <div class="spinner"></div>
+
+    <div class="comment-section">
+        <h2>Comments</h2>
+        <input type="text" id="name" placeholder="Your name">
+        <textarea id="comment" placeholder="Your comment"></textarea>
+        <button onclick="addComment()">Post Comment</button>
+        <div id="comments"></div>
     </div>
+
     <div class="footer">© 2025 Larry Inc</div>
+
+    <script>
+        // Load comments from localStorage
+        const commentsDiv = document.getElementById('comments');
+        let comments = JSON.parse(localStorage.getItem('larryComments')) || [];
+
+        function displayComments() {
+            commentsDiv.innerHTML = '';
+            comments.forEach(c => {
+                const div = document.createElement('div');
+                div.className = 'comment';
+                div.innerHTML = `<strong>${c.name}:</strong> ${c.text}`;
+                commentsDiv.appendChild(div);
+            });
+        }
+
+        function addComment() {
+            const name = document.getElementById('name').value.trim();
+            const text = document.getElementById('comment').value.trim();
+            if(name && text){
+                comments.push({name, text});
+                localStorage.setItem('larryComments', JSON.stringify(comments));
+                displayComments();
+                document.getElementById('name').value = '';
+                document.getElementById('comment').value = '';
+            } else {
+                alert('Please enter both name and comment.');
+            }
+        }
+
+        // Initial display
+        displayComments();
+    </script>
 </body>
 </html>
 
