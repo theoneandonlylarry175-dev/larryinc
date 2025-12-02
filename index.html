@@ -2,78 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Arlee Smith Fan Club!</title>
+    <title>Arlee Smith Fanpage</title>
     <style>
         body {
             background-color: #ffccff;
-            color: #000099;
             font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #330066;
             text-align: center;
             margin: 0;
             padding: 0;
         }
+        header {
+            background-color: #ff99cc;
+            padding: 20px;
+            border-bottom: 5px dotted #660033;
+        }
         h1 {
             font-size: 48px;
-            color: #ff0000;
-            text-shadow: 2px 2px #000000;
-        }
-        h2 {
-            color: #006600;
+            margin: 0;
+            text-shadow: 2px 2px #ff66ff;
         }
         img {
-            border: 10px dotted #00ffff;
             width: 300px;
-            animation: spin 10s linear infinite;
+            height: auto;
+            border: 5px dashed #660033;
+            margin: 20px 0;
         }
-        marquee {
-            font-size: 24px;
-            color: #ff9900;
-        }
-        .bizarre-facts {
-            background-color: #ffff99;
-            border: 5px dashed #ff00ff;
+        section {
             padding: 20px;
-            margin: 20px auto;
-            width: 60%;
+            background-color: #ffeeff;
+            margin: 20px;
+            border: 3px dotted #cc33cc;
         }
-        ul {
-            text-align: left;
+        .weird-fact {
+            color: #990066;
+            font-size: 20px;
+            margin: 10px 0;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        footer {
+            background-color: #ff99cc;
+            padding: 15px;
+            border-top: 5px dotted #660033;
         }
         a {
-            color: #ff00ff;
+            color: #660066;
+            text-decoration: none;
             font-weight: bold;
-            text-decoration: blink;
+        }
+        a:hover {
+            color: #ff33ff;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to the Arlee Smith Fanpage!</h1>
+    </header>
 
-<h1>Welcome to the Official Arlee Smith Fan Page!</h1>
+    <img src="arlee.jpg" alt="Arlee Smith">
 
-<marquee behavior="scroll" direction="left">✨✨ All Hail Arlee! Keeper of Socks and Master of Invisible Toast! ✨✨</marquee>
+    <section>
+        <h2>About Arlee</h2>
+        <p class="weird-fact">Arlee once convinced a squirrel to learn calculus and now it grades homework for extra credit.</p>
+        <p class="weird-fact">He owns a collection of invisible hats that only appear during thunderstorms.</p>
+        <p class="weird-fact">Legend says Arlee can sneeze in 37 different directions simultaneously.</p>
+    </section>
 
-<img src="cba848e4-190e-4603-a79b-7e4cdfe02dbe.png" alt="Arlee Smith Photo">
+    <section>
+        <h2>Bizarre Timeline</h2>
+        <ul class="weird-fact">
+            <li>1999: Arlee taught a goldfish to juggle tiny oranges.</li>
+            <li>2005: Invented a toaster that sings lullabies to bread.</li>
+            <li>2012: Won the "Most Confusing Magic Trick of the Year" award.</li>
+            <li>2024: Allegedly became friends with a cloud named "Flufferton".</li>
+        </ul>
+    </section>
 
-<div class="bizarre-facts">
-    <h2>Bizarre & Absurd Facts About Arlee Smith:</h2>
-    <ul>
-        <li>Arlee once wrestled a cloud for breakfast and won.</li>
-        <li>Can communicate fluently with rubber ducks using Morse code.</li>
-        <li>Invented a sport where participants balance on spaghetti while reciting poetry.</li>
-        <li>Known to randomly turn invisible when sneezing backwards.</li>
-        <li>Secretly the world's best collector of invisible socks.</li>
-    </ul>
-</div>
+    <section>
+        <h2>Fan Messages</h2>
+        <p class="weird-fact">"I once saw Arlee use spaghetti as a bookmark. Life-changing!" – Anonymous</p>
+        <p class="weird-fact">"He stared at a painting so hard that it changed colors. Truly mesmerizing." – Confused Fan</p>
+    </section>
 
-<h2>Official Arlee Links</h2>
-<p>Visit Arlee's <a href="#">Invisible Museum of Socks</a> for more surprises!</p>
-<p>Check out the <a href="#">Unreal Arlee Dance Tutorials</a>!</p>
-
-<marquee behavior="alternate" direction="right">🎉🎉 Beware! Watching Arlee may cause sudden fits of giggles and rainbow vision! 🎉🎉</marquee>
-
+    <footer>
+        <p>Contact Arlee via pigeon mail or smoke signals.</p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
 </body>
 </html>
