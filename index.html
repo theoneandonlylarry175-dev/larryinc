@@ -1,92 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Arlee Smith Fanpage</title>
-    <style>
-        body {
-            background-color: #ffccff;
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            color: #330066;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ff99cc;
-            padding: 20px;
-            border-bottom: 5px dotted #660033;
-        }
-        h1 {
-            font-size: 48px;
-            margin: 0;
-            text-shadow: 2px 2px #ff66ff;
-        }
-        img {
-            width: 300px;
-            height: auto;
-            border: 5px dashed #660033;
-            margin: 20px 0;
-        }
-        section {
-            padding: 20px;
-            background-color: #ffeeff;
-            margin: 20px;
-            border: 3px dotted #cc33cc;
-        }
-        .weird-fact {
-            color: #990066;
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #ff99cc;
-            padding: 15px;
-            border-top: 5px dotted #660033;
-        }
-        a {
-            color: #660066;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #ff33ff;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Amara Glatfelter — Fanpage</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Courier New", monospace;
+        background: black;
+        color: #00ffea;
+        overflow-x: hidden;
+    }
+
+    /* Glitchy background animation */
+    @keyframes hueShift {
+        0% { filter: hue-rotate(0deg); }
+        100% { filter: hue-rotate(360deg); }
+    }
+
+    header {
+        background: #ff0055;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        animation: hueShift 8s linear infinite;
+    }
+
+    .section {
+        margin: 20px;
+        padding: 20px;
+        background: #111;
+        border: 2px solid #ff0055;
+        box-shadow: 0 0 20px #ff0055;
+    }
+
+    .glitch {
+        font-size: 24px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    /* Fake popups */
+    .popup {
+        position: fixed;
+        background: #111;
+        color: #ff0055;
+        border: 2px solid #ff0055;
+        padding: 12px;
+        width: 220px;
+        font-size: 14px;
+        box-shadow: 0 0 15px #ff0055;
+        animation: drift 6s linear infinite alternate;
+        z-index: 9999;
+    }
+
+    @keyframes drift {
+        0% { transform: translate(0px, 0px); }
+        100% { transform: translate(12px, -12px); }
+    }
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        background: #ff0055;
+        color: black;
+        padding: 8px;
+        font-weight: bold;
+    }
+
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll 8s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    img.amara-photo {
+        display: block;
+        margin: 20px auto;
+        max-width: 300px;
+        border: 4px solid #ff0055;
+        box-shadow: 0 0 20px #ff0055;
+        animation: hueShift 6s linear infinite;
+    }
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to the Arlee Smith Fanpage!</h1>
-    </header>
 
-    <img src="arlee.png" alt="Arlee Smith">
+<header>AMARA GLATFELTER</header>
 
-    <section>
-        <h2>About Arlee</h2>
-        <p class="weird-fact">Arlee once convinced a squirrel to learn calculus and now it grades homework for extra credit.</p>
-        <p class="weird-fact">He owns a collection of invisible hats that only appear during thunderstorms.</p>
-        <p class="weird-fact">Legend says Arlee can sneeze in 37 different directions simultaneously.</p>
-    </section>
+<img src="506e76a5-f4f4-474f-b51e-546b68b5c294.png" alt="Amara Glatfelter" class="amara-photo">
 
-    <section>
-        <h2>Bizarre Timeline</h2>
-        <ul class="weird-fact">
-            <li>1999: Arlee taught a goldfish to juggle tiny oranges.</li>
-            <li>2005: Invented a toaster that sings lullabies to bread.</li>
-            <li>2012: Won the "Most Confusing Magic Trick of the Year" award.</li>
-            <li>2024: Allegedly became friends with a cloud named "Flufferton".</li>
-        </ul>
-    </section>
+<div class="marquee">
+    <span>SIGNAL NOISE: SYSTEM DETECTS UNUSUAL AMARA ACTIVITY</span>
+</div>
 
-    <section>
-        <h2>Fan Messages</h2>
-        <p class="weird-fact">"I once saw Arlee use spaghetti as a bookmark. Life-changing!" – Anonymous</p>
-        <p class="weird-fact">"He stared at a painting so hard that it changed colors. Truly mesmerizing." – Confused Fan</p>
-    </section>
+<div class="section">
+    <div class="glitch">WHO IS AMARA?</div>
+    <p>
+        A person known for showing up exactly when you don’t expect it,  
+        disrupting normal routines, and causing a kind of controlled chaos  
+        that somehow makes things more interesting.
+    </p>
+    <p>
+        People who know her say she has “main character static energy” —  
+        the type where lights flicker when she walks into a room but  
+        nobody knows why.
+    </p>
+</div>
 
-    <footer>
-        <p>Contact Arlee via pigeon mail or smoke signals.</p>
-        <p><a href="#">Back to Top</a></p>
-    </footer>
+<div class="section">
+    <div class="glitch">NOTABLE MOMENTS</div>
+    <ul>
+        <li>Walked into a room once and the Bluetooth speakers connected to her by themselves.</li>
+        <li>Accidentally set off a building’s motion sensor system while standing still.</li>
+        <li>Somehow managed to make a vending machine reboot just by using it.</li>
+        <li>People claim she generates “glitch energy” on camera — artifacts show up only around her.</li>
+    </ul>
+</div>
+
+<!-- Fake Popups (visual only) -->
+<div class="popup" style="top: 40px; left: 30px;">
+    • SYSTEM NOTICE •<br>
+    Unidentified energy signature detected: “GLT‑FLTR”
+</div>
+
+<div class="popup" style="top: 200px; right: 40px;">
+    • ALERT •<br>
+    Visual distortion levels rising.
+</div>
+
+<div class="popup" style="bottom: 40px; left: 50px;">
+    • WARNING •<br>
+    Page stability: 57%
+</div>
+
+<div class="section">
+    <div class="glitch">COMMENTS FROM PEOPLE</div>
+    <p>“Every time Amara shows up, something electronic freaks out. Not joking.”</p>
+    <p>“She has this vibe like she's halfway between normal reality and static.”</p>
+    <p>“I once saw her walk past a TV and the screen glitched for a full second.”</p>
+</div>
+
+<div class="marquee">
+    <span>END OF TRANSMISSION — MORE DATA LOADING…</span>
+</div>
+
 </body>
 </html>
+
