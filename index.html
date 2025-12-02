@@ -1,160 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Amara Glatfelter — Fanpage</title>
-
-<style>
-    body {
-        margin: 0;
-        font-family: "Courier New", monospace;
-        background: black;
-        color: #00ffea;
-        overflow-x: hidden;
-    }
-
-    /* Glitchy background animation */
-    @keyframes hueShift {
-        0% { filter: hue-rotate(0deg); }
-        100% { filter: hue-rotate(360deg); }
-    }
-
-    header {
-        background: #ff0055;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-        letter-spacing: 4px;
-        animation: hueShift 8s linear infinite;
-    }
-
-    .section {
-        margin: 20px;
-        padding: 20px;
-        background: #111;
-        border: 2px solid #ff0055;
-        box-shadow: 0 0 20px #ff0055;
-    }
-
-    .glitch {
-        font-size: 24px;
-        font-weight: bold;
-        position: relative;
-    }
-
-    /* Fake popups */
-    .popup {
-        position: fixed;
-        background: #111;
-        color: #ff0055;
-        border: 2px solid #ff0055;
-        padding: 12px;
-        width: 220px;
-        font-size: 14px;
-        box-shadow: 0 0 15px #ff0055;
-        animation: drift 6s linear infinite alternate;
-        z-index: 9999;
-    }
-
-    @keyframes drift {
-        0% { transform: translate(0px, 0px); }
-        100% { transform: translate(12px, -12px); }
-    }
-
-    .marquee {
-        width: 100%;
-        overflow: hidden;
-        background: #ff0055;
-        color: black;
-        padding: 8px;
-        font-weight: bold;
-    }
-
-    .marquee span {
-        display: inline-block;
-        padding-left: 100%;
-        animation: scroll 8s linear infinite;
-    }
-
-    @keyframes scroll {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-100%); }
-    }
-
-    img.amara-photo {
-        display: block;
-        margin: 20px auto;
-        max-width: 300px;
-        border: 4px solid #ff0055;
-        box-shadow: 0 0 20px #ff0055;
-        animation: hueShift 6s linear infinite;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff5f6d, #ffc371);
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .spinner {
+            margin-top: 30px;
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-
 <body>
-
-<header>AMARA GLATFELTER</header>
-
-<img src="506e76a5-f4f4-474f-b51e-546b68b5c294.png" alt="Amara Glatfelter" class="amara-photo">
-
-<div class="marquee">
-    <span>SIGNAL NOISE: SYSTEM DETECTS UNUSUAL AMARA ACTIVITY</span>
-</div>
-
-<div class="section">
-    <div class="glitch">WHO IS AMARA?</div>
-    <p>
-        A person known for showing up exactly when you don’t expect it,  
-        disrupting normal routines, and causing a kind of controlled chaos  
-        that somehow makes things more interesting.
-    </p>
-    <p>
-        People who know her say she has “main character static energy” —  
-        the type where lights flicker when she walks into a room but  
-        nobody knows why.
-    </p>
-</div>
-
-<div class="section">
-    <div class="glitch">NOTABLE MOMENTS</div>
-    <ul>
-        <li>Walked into a room once and the Bluetooth speakers connected to her by themselves.</li>
-        <li>Accidentally set off a building’s motion sensor system while standing still.</li>
-        <li>Somehow managed to make a vending machine reboot just by using it.</li>
-        <li>People claim she generates “glitch energy” on camera — artifacts show up only around her.</li>
-    </ul>
-</div>
-
-<!-- Fake Popups (visual only) -->
-<div class="popup" style="top: 40px; left: 30px;">
-    • SYSTEM NOTICE •<br>
-    Unidentified energy signature detected: “GLT‑FLTR”
-</div>
-
-<div class="popup" style="top: 200px; right: 40px;">
-    • ALERT •<br>
-    Visual distortion levels rising.
-</div>
-
-<div class="popup" style="bottom: 40px; left: 50px;">
-    • WARNING •<br>
-    Page stability: 57%
-</div>
-
-<div class="section">
-    <div class="glitch">COMMENTS FROM PEOPLE</div>
-    <p>“Every time Amara shows up, something electronic freaks out. Not joking.”</p>
-    <p>“She has this vibe like she's halfway between normal reality and static.”</p>
-    <p>“I once saw her walk past a TV and the screen glitched for a full second.”</p>
-</div>
-
-<div class="marquee">
-    <span>END OF TRANSMISSION — MORE DATA LOADING…</span>
-</div>
-
+    <div>
+        <h1>Coming Soon</h1>
+        <p>Our website is under construction. Stay tuned!</p>
+        <div class="spinner"></div>
+    </div>
 </body>
 </html>
 
