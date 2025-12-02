@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Larry Inc - Coming Soon</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #ff5f6d, #ffc371);
-            color: #fff;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #00ffcc;
             text-align: center;
+            overflow: hidden;
         }
         h1 {
             font-size: 4rem;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            animation: flicker 1.5s infinite;
         }
         p {
             font-size: 1.5rem;
@@ -28,8 +30,8 @@
             margin-top: 30px;
             width: 50px;
             height: 50px;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            border-top-color: #fff;
+            border: 5px solid rgba(0, 255, 204, 0.3);
+            border-top-color: #00ffcc;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             display: inline-block;
@@ -37,14 +39,27 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+            20%, 22%, 24%, 55% { opacity: 0.4; }
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(0, 255, 204, 0.5);
+        }
     </style>
 </head>
 <body>
     <div>
-        <h1>Coming Soon</h1>
+        <h1>Larry Inc</h1>
         <p>Our website is under construction. Stay tuned!</p>
         <div class="spinner"></div>
     </div>
+    <div class="footer">© 2025 Larry Inc</div>
 </body>
 </html>
 
